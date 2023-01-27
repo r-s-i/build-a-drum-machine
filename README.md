@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Drum Machine App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple React app that acts as a drum machine. It allows users to play different notes (six) and drum sounds (three) by pressing the associated letter key on their keyboard (they also can use their mouse). It was made a solution to [FCC's Build a Drum Machine project](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-drum-machine){:target="_blank"}.
 
-## Available Scripts
+## How to use
 
-In the project directory, you can run:
+[The easiest way to use the program is to go to my portfolio site](https://www.robiniversen.com/build-a-drum-machine) {:target="_blank"}
 
-### `yarn start`
+- Click on the keys displayed on the screen to play the corresponding sound or press the associated letter key on your keyboard.
+- The name of the sound currently playing will be displayed on the screen.
+-  The app uses the following letter keys as inputs: Q, W, E, A, S, D, Z, X, C.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Components
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The app is uses a DrumMachine component. The component uses the useEffect hook to listen for keydown and keyup events on the document and calls the handleKeyPress and handleKeyPressUp functions accordingly. It also listen for clicks with handleClick.
 
-### `yarn test`
+    - The handleClick function is called when a user clicks on a key and plays the corresponding sound.
+    - The handleKeyPress function is called when a user presses a letter key on their keyboard and plays the corresponding sound. It also changes the background color of the key to white when pressed (this happens using CSS with handleclick). 
+    - The handleKeyPressUp function is called when a user releases a letter key on their keyboard. It changes the background color of the key back to its original color.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Data
 
-### `yarn build`
+The app uses the following data:
+    - allowedKeys: an array of letter keys that are accepted as inputs. This prevents listeners to react on every key pressed.
+    - keysToNames: an object that maps letter keys to the name of the corresponding sound. 
+    drumPadData: an array of objects that contain information about each key. Name of the letter (used as an id (html)) and url to the sound file (local). 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Conclusion
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This app is a simple way to play around with notes and drum sounds. It is built using React and is easy to use. Feel free to fork, clone and make any modification you want to it. This project is licensed under the MIT License.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
