@@ -31,52 +31,43 @@ const DrumMachine = () => {
   };
 
   const allowedKeys = ["Q", "W", "E", "A", "S", "D", "Z", "X", "C"];
-  const keysToNames = {"Q":"Heater 1", "W": "Heater 2", "E": "Heater 3", "A": "Heater 4", "S": "Clap", "D": "Open HH", "Z": "Kick-n-Hat", "X": "Kick", "C": "Closed HH"};
+  const keysToNames = {"Q":"C Note", "W": "A Note", "E": "G Note", "A": "E Note", "S": "D Note", "D": "Also C Note", "Z": "Drum #1", "X": "Drum #2", "C": "Drum #3"};
   const drumPadData = [
     {
-      name: "Heater 1",
       letter: "Q",
-      url: "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"
+      url: "./sounds/c-note.ogg"
     },
     {
-      name: "Heater 2",
       letter: "W",
-      url: "https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3"
+      url: "./sounds/a-note.ogg"
     },
     {
-      name: "Heater 3",
       letter: "E",
-      url: "https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3"
+      url: "./sounds/g-note.ogg"
     },
     {
-      name: "Heater 4",
       letter: "A",
-      url: "https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3"
+      url: "./sounds/e-note.ogg"
     },
     {
-      name: "Clap",
       letter: "S",
-      url: "https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3"
+      url: "./sounds/d-note.ogg"
     },
     {
-      name: "Open HH",
       letter: "D",
-      url: "https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3"
+      url: "./sounds/c2-note.ogg"
     },
     {
-      name: "Kick-n-Hat",
       letter: "Z",
-      url: "https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3"
+      url: "./sounds/drum-1.ogg"
     },
     {
-      name: "Kick",
       letter: "X",
-      url: "https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3"
+      url: "./sounds/drum-2.ogg"
     },
     {
-      name: "Closed HH",
       letter: "C",
-      url: "https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"
+      url: "./sounds/drum-3.ogg"
     },
   ];
 
@@ -92,7 +83,7 @@ const DrumMachine = () => {
                 className="drum-pad"
                 id={letter}
                 key={"key_" + i}
-                onClick={handleClick}                      
+                onClick={handleClick}               
               >
                 {letter}
                 <audio className="clip" src={url} id={letter} />
@@ -100,7 +91,6 @@ const DrumMachine = () => {
             );
         })}
       </div>
-
       </div>
     </div>
   );
