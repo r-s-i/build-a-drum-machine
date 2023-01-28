@@ -14,9 +14,9 @@ Components
 
 The app is uses a DrumMachine component. The component uses the useEffect hook to listen for keydown and keyup events on the document and calls the handleKeyPress and handleKeyPressUp functions accordingly. It also listen for clicks with handleClick.
 
-    - The handleClick function is called when a user clicks on a key and plays the corresponding sound.
-    - The handleKeyPress function is called when a user presses a letter key on their keyboard and plays the corresponding sound. It also changes the background color of the key to white when pressed (this happens using CSS with handleclick). 
-    - The handleKeyPressUp function is called when a user releases a letter key on their keyboard. It changes the background color of the key back to its original color.
+- The handleClick function is called when a user clicks on a key and plays the corresponding sound.
+- The handleKeyPress function is called when a user presses a letter key on their keyboard and plays the corresponding sound. It also changes the background color of the key to white when pressed (this happens using CSS with handleclick). 
+- The handleKeyPressUp function is called when a user releases a letter key on their keyboard. It changes the background color of the key back to its original color.
 
 ## Data
 
