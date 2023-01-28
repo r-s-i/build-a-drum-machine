@@ -21,9 +21,9 @@ The app is uses a DrumMachine component. The component uses the useEffect hook t
 ## Data
 
 The app uses the following data:
-    - allowedKeys: an array of letter keys that are accepted as inputs. This prevents listeners to react on every key pressed.
-    - keysToNames: an object that maps letter keys to the name of the corresponding sound. 
-    drumPadData: an array of objects that contain information about each key. Name of the letter (used as an id (html)) and url to the sound file (local). 
+- allowedKeys: an array of letter keys that are accepted as inputs. This prevents listeners to react on every key pressed.
+- keysToNames: an object that maps letter keys to the name of the corresponding sound. 
+drumPadData: an array of objects that contain information about each key. Name of the letter (used as an id (html)) and url to the sound file (local). 
 
 ## Conclusion
 
