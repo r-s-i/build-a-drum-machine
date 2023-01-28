@@ -1,10 +1,10 @@
 # Drum Machine App
 
-This is a simple React app that acts as a drum machine. It allows users to play different notes (six) and drum sounds (three) by pressing the associated letter key on their keyboard (they also can use their mouse). It was made a solution to [FCC's Build a Drum Machine project](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-drum-machine){:target="_blank"}.
+This is a simple React app that acts as a drum machine. It allows users to play different notes (six) and drum sounds (three) by pressing the associated letter key on their keyboard (they also can use their mouse). It was made a solution to [FCC's Build a Drum Machine project](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-drum-machine).
 
 ## How to use
 
-[The easiest way to use the program is to go to my portfolio site](https://www.robiniversen.com/build-a-drum-machine) {:target="_blank"}
+[The easiest way to use the program is to go to my portfolio site](https://www.robiniversen.com/build-a-drum-machine)
 
 - Click on the keys displayed on the screen to play the corresponding sound or press the associated letter key on your keyboard.
 - The name of the sound currently playing will be displayed on the screen.
